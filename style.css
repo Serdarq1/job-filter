@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    font-family: 'Spartan', sans-serif;
+}
+header {
+    background: hsl(180, 29%, 50%) url('assets/bg-header-desktop.svg');
+    background-size: cover;
+    height: 150px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+}
+.area {
+    position: relative;
+    top: -65px;
+    display: none;
+    border-radius: 8px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.area span a{
+    position: relative;
+    right: 50px;
+    display: none;
+}
+.lists {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.listings {
+    background-color: hsl(180, 52%, 96%);
+    background-size: cover;
+    height: 100%;
+}
+.lists .row {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+.active {
+    border-left: 5px solid hsl(180, 29%, 50%);
+}
+main {
+    margin-left: auto;
+    margin-right: auto;
+}
+.badge_title {
+    color: hsl(180, 29%, 50%);
+    font-weight: 700;
+}
+.listings .new {
+    background-color: hsl(180, 29%, 50%);
+}
+.lists .card_body p{
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+.lists .card_body span {
+    color: hsl(180, 8%, 52%);
+    font-weight: 400;
+}
+
+.clear{
+    cursor: pointer;
+}
+
+.lists .btn {
+    background-color: hsl(180, 52%, 96%);
+    padding: 8px;
+    color: hsl(180, 29%, 50%);
+    margin: 0px 10px 0px 5px;
+    font-weight: 500;
+}
+.lists .btn_group {
+    justify-content: space-evenly;
+}
+@media only screen and (max-width: 492px) {
+    header {
+        background: hsl(180, 29%, 50%) url(assets/bg-header-mobile.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+    }
+    .lists,.area{
+        margin: 0px 10px;
+    }
+    .lists .row {
+        margin: 5px 10px;
+    }
+}
+

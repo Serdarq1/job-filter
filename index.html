@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor| Job listings with filtering </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+<body>
+  
+    <div>
+      
+        <header class="head"></header>
+        <main class="listings pt-5">
+          
+          <div class="shadow-lg mb-5 d-flex justify-content-between  py-4 px-4 container align-items-center rounded-2 new-filter-container d-none" style="height: 50px; width: 950px; background-color: white;">
+            <div class="new-filter d-flex">
+              
+            </div>
+            <div class="clear">
+              X
+            </div>
+          </div>
+
+            <div class="container">
+                <div class="area" id="area">
+                </div>
+                <div class="lists">
+                    <div class="row shadow active">
+                        <div class="col-md-2">
+                            <img src="assets/photosnap.svg" alt="photo1" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex mb-2">
+                                <span class="badge_title">Photosnap</span> &nbsp;&nbsp;
+                                <span class="badge new rounded-pill">New!</span> &nbsp;
+                                <span class="badge rounded-pill bg-dark">Featured</span>
+                            </div>
+                            <div class="card_body">
+                                <p>Senior Frontend Developer</p>
+                                <span>1d ago &nbsp; •</span> &nbsp;&nbsp;
+                                <span>Full Time&nbsp; • </span>&nbsp;&nbsp;
+                                <span>&nbsp;USA only</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="d-flex btn_group pt-4">
+                                <button class="btn frontend">Frontend</button>
+                                <button class="btn senior">Senior</button>
+                                <button class="btn html">HTML</button>
+                                <button class="btn css">CSS</button>
+                                <button class="btn js">JavaScript</button>
+                            </div>
+                        </div>
+                    </div>
+<!-- 2nd list -->
+                    <div class="row shadow mt-4 active">
+                        <div class="col-md-2">
+                            <img src="assets/manage.svg" alt="photo2" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex mb-2">
+                                <span class="badge_title">Manage</span> &nbsp;&nbsp;&nbsp;
+                                <span class="badge new rounded-pill">New!</span> &nbsp;
+                                <span class="badge rounded-pill bg-dark">Featured</span>
+                            </div>
+                            <div class="card_body">
+                                <p>Fullstack Developer</p>
+                                <span>1d ago &nbsp; •</span> &nbsp;&nbsp;
+                                <span>Part Time&nbsp; • </span>&nbsp;&nbsp;
+                                <span>&nbsp;Remote</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="d-flex btn_group pt-4">
+                                <button class="btn fullstack">Fullstack</button>
+                                <button class="btn midweight">Midweight</button>
+                                <button class="btn python">Python</button>
+                                <button class="btn react">React</button>
+                            </div>
+                        </div>
+                    </div>
+<!-- 3rd list -->
+                    <div class="row shadow mt-4">
+                        <div class="col-md-2">
+                            <img src="assets/account.svg" alt="photo3" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex mb-2">
+                                <span class="badge_title">Account</span> &nbsp;&nbsp;&nbsp;
+                                <span class="badge new rounded-pill">New!</span> &nbsp;
+                            </div>
+                            <div class="card_body">
+                                <p>Junior Frontend Developer</p>
+                                <span>2d ago &nbsp; •</span> &nbsp;&nbsp;
+                                <span>Part Time&nbsp; • </span>&nbsp;&nbsp;
+                                <span>&nbsp;USA only</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="d-flex btn_group pt-4">
+                                <button class="btn frontend">Frontend</button>
+                                <button class="btn junior">Junior</button>
+                                <button class="btn react">React</button>
+                                <button class="btn sass">Sass</button>
+                                <button class="btn js">JavaScript</button>
+                            </div>
+                        </div>
+                    </div>
+<!-- 4th list -->
+                    <div class="row shadow mt-4">
+                        <div class="col-md-2">
+                            <img src="assets/myhome.svg" alt="photo4" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex mb-2">
+                                <span class="badge_title">MyHome</span> &nbsp;&nbsp;&nbsp;
+                            </div>
+                            <div class="card_body">
+                                <p>Junior Frontend Developer</p>
+                                <span>5d ago &nbsp; •</span> &nbsp;&nbsp;
+                                <span>Contract&nbsp; • </span>&nbsp;&nbsp;
+                                <span>&nbsp;USA only</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="d-flex btn_group pt-4">
+                                <button class="btn frontend">Frontend</button>
+                                <button class="btn junior">Junior</button>
+                                <button class="btn sass">Sass</button>
+                                <button class="btn js">JavaScript</button>
+                            </div>
+                        </div>
+                    </div>
+<!-- 5thlist-->
+                    <div class="row shadow mt-4">
+                        <div class="col-md-2">
+                            <img src="assets/loop-studios.svg" alt="photo5" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex mb-2">
+                                <span class="badge_title">Loop Studios</span> &nbsp;&nbsp;&nbsp;
+                            </div>
+                            <div class="card_body">
+                                <p>Software Engineer</p>
+                                <span>1w ago &nbsp; •</span> &nbsp;&nbsp;
+                                <span>Full Time&nbsp; • </span>&nbsp;&nbsp;
+                                <span>&nbsp;Worldwide</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="d-flex btn_group pt-4">
+                                <button class="btn fullstack">Fullstack</button>
+                                <button class="btn midweight">Midweight</button>
+                                <button class="btn js">JavaScript</button>
+                                <button class="btn sass">Sass</button>
+                                <button class="btn ruby">Ruby</button>
+                            </div>
+                        </div>
+                    </div>
+<!-- 6th list -->
+                    <div class="row shadow mt-4">
+                        <div class="col-md-2">
+                            <img src="assets/faceit.svg" alt="photo6" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex mb-2">
+                                <span class="badge_title">FaceIt</span> &nbsp;&nbsp;&nbsp;
+                            </div>
+                            <div class="card_body">
+                                <p>Junior Backend Developer</p>
+                                <span>2w ago &nbsp; •</span> &nbsp;&nbsp;
+                                <span>Full Time&nbsp; • </span>&nbsp;&nbsp;
+                                <span>&nbsp;UKonly</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="d-flex btn_group pt-4">
+                                <button class="btn backend">Backend</button>
+                                <button class="btn junior">Junior</button>
+                                <button class="btn ruby">Ruby</button>
+                                <button class="btn ror">RoR</button>
+                            </div>
+                        </div>
+                    </div>
+<!-- 7th list -->
+                    <div class="row shadow mt-4">
+                        <div class="col-md-2">
+                            <img src="assets/shortly.svg" alt="photo7" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex mb-2">
+                                <span class="badge_title">Shortly</span> &nbsp;&nbsp;&nbsp;
+                            </div>
+                            <div class="card_body">
+                                <p>Junior Developer</p>
+                                <span>2w ago &nbsp; •</span> &nbsp;&nbsp;
+                                <span>Full Time&nbsp; • </span>&nbsp;&nbsp;
+                                <span>&nbsp;Worldwide</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="d-flex btn_group pt-4">
+                                <button class="btn frontend">Frontend</button>
+                                <button class="btn junior">Junior</button>
+                                <button class="btn html">HTML</button>
+                                <button class="btn sass">Sass</button>
+                                <button class="btn js">JavaScript</button>
+                            </div>
+                        </div>
+                    </div>
+<!-- 8th list -->
+                    <div class="row shadow mt-4">
+                        <div class="col-md-2">
+                            <img src="assets/insure.svg" alt="photo8" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex mb-2">
+                                <span class="badge_title">Insure</span> &nbsp;&nbsp;&nbsp;
+                            </div>
+                            <div class="card_body">
+                                <p>Junior Frontend Developer</p>
+                                <span>2w ago &nbsp; •</span> &nbsp;&nbsp;
+                                <span>Full Time&nbsp; • </span>&nbsp;&nbsp;
+                                <span>&nbsp;USAonly</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="d-flex btn_group pt-4">
+                                <button class="btn  frontend">Frontend</button>
+                                <button class="btn junior">Junior</button>
+                                <button class="btn vue">Vue</button>
+                                <button class="btn js">JavaScript</button>
+                                <button class="btn sass">Sass</button>
+                            </div>
+                        </div>
+                    </div>
+<!-- 9th list -->
+                    <div class="row shadow mt-4">
+                        <div class="col-md-2">
+                            <img src="assets/eyecam-co.svg" alt="photo9" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex mb-2">
+                                <span class="badge_title">Eyecam Co.</span> &nbsp;&nbsp;&nbsp;
+                            </div>
+                            <div class="card_body">
+                                <p>Fullstack Engineer</p>
+                                <span>3w ago &nbsp; •</span> &nbsp;&nbsp;
+                                <span>Full Time&nbsp; • </span>&nbsp;&nbsp;
+                                <span>&nbsp;Worldwide</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="d-flex btn_group pt-4">
+                                <button class="btn fullstack">Fullstack</button>
+                                <button class="btn midweight">Midweight</button>
+                                <button class="btn js">JavaScript</button>
+                                <button class="btn django">Django</button>
+                                <button class="btn python">Python</button>
+                            </div>
+                        </div>
+                    </div>
+            <!-- 10th list -->
+            <div class="row shadow mt-4">
+                        <div class="col-md-2">
+                            <img src="assets/the-air-filter-company.svg" alt="photo10" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex mb-2">
+                                <span class="badge_title">The Air Filter Company</span> &nbsp;&nbsp;&nbsp;
+                            </div>
+                            <div class="card_body">
+                                <p>Front-end Dev</p>
+                                <span>1m ago &nbsp; •</span> &nbsp;&nbsp;
+                                <span>Part Time&nbsp; • </span>&nbsp;&nbsp;
+                                <span>&nbsp;Worldwide</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="d-flex btn_group pt-4">
+                                <button class="btn frontend">Frontend</button>
+                                <button class="btn junior">Junior</button>
+                                <button class="btn react">React</button>
+                                <button class="btn sass">Sass</button>
+                                <button class="btn js">JavaScript</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
